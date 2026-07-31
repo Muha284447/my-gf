@@ -10,7 +10,7 @@
 
 <div id="hearts-layer" aria-hidden="true"></div>
 
-<audio id="bg-music" loop preload="none">
+<audio id="bg-music" loop preload="auto">
   <source src="assets/music/our-song.mp3" type="audio/mpeg">
 </audio>
 <button id="music-toggle" title="Включить нашу песню">
@@ -18,6 +18,163 @@
 </button>
 
 <main>
+
+  <section class="bouquet-intro">
+    <div class="bouquet" aria-hidden="true">
+      <svg class="bouquet-svg" viewBox="0 0 480 540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <path id="petal-lily" d="M0,0 C-16,-19 -18,-52 0,-76 C18,-52 16,-19 0,0 Z"/>
+          <ellipse id="petal-round" cx="0" cy="-23" rx="15" ry="25"/>
+          <radialGradient id="lilyGrad" cx="50%" cy="100%" r="95%">
+            <stop offset="0%" stop-color="#ffe3ee"/>
+            <stop offset="55%" stop-color="#fffaf5"/>
+            <stop offset="100%" stop-color="#ffffff"/>
+          </radialGradient>
+          <radialGradient id="pinkGrad" cx="50%" cy="100%" r="100%">
+            <stop offset="0%" stop-color="#ff8fb8"/>
+            <stop offset="100%" stop-color="#ffd7e8"/>
+          </radialGradient>
+          <radialGradient id="lavGrad" cx="50%" cy="100%" r="100%">
+            <stop offset="0%" stop-color="#bd9bf2"/>
+            <stop offset="100%" stop-color="#ecdfff"/>
+          </radialGradient>
+          <radialGradient id="peachGrad" cx="50%" cy="100%" r="100%">
+            <stop offset="0%" stop-color="#ffb37a"/>
+            <stop offset="100%" stop-color="#ffe3cf"/>
+          </radialGradient>
+          <linearGradient id="wrapGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fffaf3"/>
+            <stop offset="100%" stop-color="#ffe2cd"/>
+          </linearGradient>
+        </defs>
+
+        <ellipse class="shadow" cx="240" cy="528" rx="155" ry="14"/>
+
+        <g class="stems">
+          <path class="stem" style="animation-delay:.25s" d="M240,415 C225,340 195,280 150,205"/>
+          <path class="stem" style="animation-delay:.30s" d="M240,415 C250,340 285,270 330,175"/>
+          <path class="stem" style="animation-delay:.35s" d="M240,415 C240,360 240,310 240,250"/>
+          <path class="stem" style="animation-delay:.40s" d="M240,415 C200,380 130,340 85,270"/>
+          <path class="stem" style="animation-delay:.45s" d="M240,415 C280,380 345,335 375,260"/>
+          <path class="stem" style="animation-delay:.35s" d="M240,415 C238,320 238,220 240,120"/>
+        </g>
+
+        <g class="wrap">
+          <path class="wrap-shape" d="M180,405 C145,435 130,480 136,525 L344,525 C350,480 335,435 300,405 C268,420 212,420 180,405 Z"/>
+          <path class="wrap-crease" d="M240,410 C238,450 240,490 240,522"/>
+          <path class="wrap-crease" d="M208,408 C200,450 202,492 206,522"/>
+          <path class="wrap-crease" d="M272,408 C280,450 278,492 274,522"/>
+        </g>
+
+        <g class="leaves">
+          <path class="leaf" style="animation-delay:.80s" d="M170,330 C138,320 108,352 100,388 C136,388 165,368 178,338 Z"/>
+          <path class="leaf" style="animation-delay:.85s" d="M310,320 C342,310 372,342 380,378 C344,378 315,358 302,328 Z"/>
+          <path class="leaf" style="animation-delay:.90s" d="M200,350 C180,343 162,358 158,378 C180,378 198,368 206,352 Z"/>
+          <path class="leaf" style="animation-delay:.95s" d="M280,345 C300,338 318,353 322,373 C300,373 282,363 274,347 Z"/>
+          <path class="leaf" style="animation-delay:1.00s" d="M240,340 C222,333 208,347 204,367 C224,367 240,357 248,343 Z"/>
+        </g>
+
+        <g class="flower" transform="translate(150,205) rotate(-6)">
+          <g class="petals">
+            <g transform="rotate(-4)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.15s"/></g>
+            <g transform="rotate(58)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.21s"/></g>
+            <g transform="rotate(119)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.27s"/></g>
+            <g transform="rotate(182)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.33s"/></g>
+            <g transform="rotate(241)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.39s"/></g>
+            <g transform="rotate(301)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.45s"/></g>
+          </g>
+          <g class="stamens" style="animation-delay:1.75s">
+            <line x1="0" y1="0" x2="0" y2="-38" transform="rotate(-20)"/>
+            <line x1="0" y1="0" x2="0" y2="-40" transform="rotate(0)"/>
+            <line x1="0" y1="0" x2="0" y2="-38" transform="rotate(20)"/>
+            <circle cx="0" cy="-38" r="3.5" transform="rotate(-20)"/>
+            <circle cx="0" cy="-40" r="3.5" transform="rotate(0)"/>
+            <circle cx="0" cy="-38" r="3.5" transform="rotate(20)"/>
+          </g>
+        </g>
+
+        <g class="flower" transform="translate(330,175) rotate(7)">
+          <g class="petals">
+            <g transform="rotate(3)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.30s"/></g>
+            <g transform="rotate(61)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.36s"/></g>
+            <g transform="rotate(118)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.42s"/></g>
+            <g transform="rotate(179)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.48s"/></g>
+            <g transform="rotate(239)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.54s"/></g>
+            <g transform="rotate(298)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.60s"/></g>
+          </g>
+          <g class="stamens" style="animation-delay:1.90s">
+            <line x1="0" y1="0" x2="0" y2="-38" transform="rotate(-20)"/>
+            <line x1="0" y1="0" x2="0" y2="-40" transform="rotate(0)"/>
+            <line x1="0" y1="0" x2="0" y2="-38" transform="rotate(20)"/>
+            <circle cx="0" cy="-38" r="3.5" transform="rotate(-20)"/>
+            <circle cx="0" cy="-40" r="3.5" transform="rotate(0)"/>
+            <circle cx="0" cy="-38" r="3.5" transform="rotate(20)"/>
+          </g>
+        </g>
+
+        <g class="flower" transform="translate(85,270) rotate(9)">
+          <g class="petals">
+            <g transform="rotate(4)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-pink-petal" style="animation-delay:1.40s"/></g>
+            <g transform="rotate(74)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-pink-petal" style="animation-delay:1.46s"/></g>
+            <g transform="rotate(142)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-pink-petal" style="animation-delay:1.52s"/></g>
+            <g transform="rotate(213)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-pink-petal" style="animation-delay:1.58s"/></g>
+            <g transform="rotate(286)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-pink-petal" style="animation-delay:1.64s"/></g>
+          </g>
+          <circle class="flower-center pink-center" r="9" style="animation-delay:1.95s"/>
+        </g>
+
+        <g class="flower" transform="translate(375,260) rotate(-9)">
+          <g class="petals">
+            <g transform="rotate(-3)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-lav-petal" style="animation-delay:1.55s"/></g>
+            <g transform="rotate(70)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-lav-petal" style="animation-delay:1.61s"/></g>
+            <g transform="rotate(146)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-lav-petal" style="animation-delay:1.67s"/></g>
+            <g transform="rotate(217)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-lav-petal" style="animation-delay:1.73s"/></g>
+            <g transform="rotate(289)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-lav-petal" style="animation-delay:1.79s"/></g>
+          </g>
+          <circle class="flower-center lav-center" r="9" style="animation-delay:2.10s"/>
+        </g>
+
+        <g class="flower" transform="translate(240,120) rotate(3)">
+          <g class="petals">
+            <g transform="rotate(2)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-peach-petal" style="animation-delay:1.70s"/></g>
+            <g transform="rotate(73)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-peach-petal" style="animation-delay:1.76s"/></g>
+            <g transform="rotate(145)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-peach-petal" style="animation-delay:1.82s"/></g>
+            <g transform="rotate(215)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-peach-petal" style="animation-delay:1.88s"/></g>
+            <g transform="rotate(287)"><use href="#petal-round" xlink:href="#petal-round" class="petal blossom-peach-petal" style="animation-delay:1.94s"/></g>
+          </g>
+          <circle class="flower-center peach-center" r="9" style="animation-delay:2.25s"/>
+        </g>
+
+        <g class="flower" transform="translate(240,250) rotate(2)">
+          <g class="petals">
+            <g transform="rotate(2)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.85s"/></g>
+            <g transform="rotate(63)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.91s"/></g>
+            <g transform="rotate(121)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:1.97s"/></g>
+            <g transform="rotate(177)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:2.03s"/></g>
+            <g transform="rotate(238)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:2.09s"/></g>
+            <g transform="rotate(299)"><use href="#petal-lily" xlink:href="#petal-lily" class="petal lily-petal" style="animation-delay:2.15s"/></g>
+          </g>
+          <g class="stamens" style="animation-delay:2.50s">
+            <line x1="0" y1="0" x2="0" y2="-40" transform="rotate(-20)"/>
+            <line x1="0" y1="0" x2="0" y2="-42" transform="rotate(0)"/>
+            <line x1="0" y1="0" x2="0" y2="-40" transform="rotate(20)"/>
+            <circle cx="0" cy="-40" r="4" transform="rotate(-20)"/>
+            <circle cx="0" cy="-42" r="4" transform="rotate(0)"/>
+            <circle cx="0" cy="-40" r="4" transform="rotate(20)"/>
+          </g>
+        </g>
+
+        <g transform="translate(240,408)">
+          <g class="bow" style="animation-delay:2.65s">
+            <path d="M0,0 L-36,-19 C-46,-4 -42,12 -25,17 Z"/>
+            <path d="M0,0 L36,-19 C46,-4 42,12 25,17 Z"/>
+            <circle r="8" class="bow-knot"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="scroll-hint bouquet-hint">пролистай вниз ↓</div>
+  </section>
 
   <section class="hero">
     <div class="hero-row">
