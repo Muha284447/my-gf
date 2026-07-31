@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для Али ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts-layer" aria-hidden="true"></div>
+
+<audio id="bg-music" loop preload="none">
+  <source src="assets/music/our-song.mp3" type="audio/mpeg">
+</audio>
+<button id="music-toggle" title="Включить нашу песню">
+  <span id="music-icon">♪</span>
+</button>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-row">
+      <h1 class="script-font">Аля</h1>
+      <figure class="scatter-photo hero-photo rot-2">
+        <div class="photo-frame">
+          <img src="assets/photos/us.jpg" alt="мы вместе" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder">📷<span>photo1.jpg</span></div>
+        </div>
+      </figure>
+    </div>
+    <h2>Happy girlfriend day</h2><br>
+    <p class="subtitle">Маленький сайт, сделанный специально для тебя</p>
+    <div class="scroll-hint">пролистай вниз ↓</div>
+  </section>
+
+  <section class="letter">
+    <h2 class="section-title script-font">Письмо</h2>
+    <div class="letter-paper">
+
+      <figure class="scatter-photo letter-photo float-left rot-2">
+        <div class="photo-frame">
+          <img src="assets/photos/she.jpg" alt="наша поездка" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder">📷<span>photo4.jpg</span></div>
+        </div>
+        
+      </figure>
+
+      <p>Дорогая Аля,</p>
+      <p>Говорят, счастье состоит из мелочей. Если это правда, то вся моя жизнь рядом с тобой — это тысячи маленьких моментов, которые стали для меня бесценными.</p>
+      <p>Каждая наша фотография — это не просто снимок. Это воспоминание, к которому хочется возвращаться снова и снова. От нашей первой поездки до самых обычных прогулок — рядом с тобой любое место становится особенным.</p>
+      <p>Спасибо тебе за твой смех, который всегда делает мой день лучше. Спасибо за поддержку, когда она особенно нужна. Спасибо за то, что умеешь превращать самые обычные вечера в те самые моменты, которые хочется хранить в сердце всю жизнь.</p>
+
+      <figure class="scatter-photo letter-photo float-right rot-3">
+        <div class="photo-frame">
+          <img src="assets/photos/beauty.jpg" alt="свидание" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder">📷<span>photo5.jpg</span></div>
+        </div>
+      </figure>
+
+      <p>Я люблю, как ты смеёшься. Люблю наши спонтанные свидания, долгие разговоры до ночи и даже уютное молчание рядом с тобой. С тобой я чувствую себя дома.</p>
+      <p>И если однажды меня спросят, какое воспоминание я хотел бы пережить ещё раз, я отвечу: любой день, в котором была ты.</p>
+      <p>My love. Пусть впереди нас ждёт ещё бесконечно много счастливых моментов.</p>
+    </div>
+  </section>
+
+  <section class="reasons">
+    <figure class="scatter-photo corner-photo rot-1">
+      <div class="photo-frame">
+        <img src="assets/photos/smile.jpg" alt="смешные лица" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="photo-placeholder">📷<span>photo6.jpg</span></div>
+      </div>
+    </figure>
+
+    <h2 class="section-title script-font">Почему я тебя люблю</h2>
+    <p class="reasons-hint">нажми на сердечко</p>
+
+    <div class="hearts-grid">
+      <button class="reason-heart" data-text="Ты стала тем местом, куда всегда хочется возвращаться.">♡</button>
+      <button class="reason-heart" data-text="Мне нравится, что первым делом я хочу рассказать всё именно тебе.">♡</button>
+      <button class="reason-heart" data-text="Ты делаешь меня лучше, даже не пытаясь этого делать.">♡</button>
+      <button class="reason-heart" data-text="Я люблю не только наши лучшие моменты, но и самые обычные дни рядом с тобой.">♡</button>
+      <button class="reason-heart" data-text="Иногда я смотрю на тебя и понимаю, что мне очень повезло">♡</button>
+      <button class="reason-heart" data-text="Мне нравится наше "мы" больше всего на свете.">♡</button>
+    </div>
+    <p class="reveal-text" id="reveal-text">&nbsp;</p>
+  </section>
+
+  <section class="closing">
+    <div class="closing-row">
+      <figure class="scatter-photo closing-photo rot-2">
+        <div class="photo-frame">
+          <img src="assets/photos/loml.jpg" alt="просто мы" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder">📷<span>photo7.jpg</span></div>
+        </div>
+      </figure>
+      <figure class="scatter-photo closing-photo rot-4">
+        <div class="photo-frame">
+          <img src="assets/photos/mi.jpg" alt="навсегда мы" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder">📷<span>photo8.jpg</span></div>
+        </div>
+      </figure>
+    </div>
+    <p class="script-font big">ТЫ ЛУЧШАЯ ДЕВУШКА НА СВЕТЕ</p>
+    <p class="tag">сделано с любовью ❤️</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
